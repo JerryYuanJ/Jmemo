@@ -4,7 +4,8 @@
   "description": "",
   "main": "switch.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "switch:dev": "node switch.js --dev",
+    "switch:prod": "node switch.js --prod"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,10 @@
-//app.js
+const config = require('./config')
 App({
   onLaunch: function () {
     
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    config: config
   }
 })
