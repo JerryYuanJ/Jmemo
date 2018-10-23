@@ -1,4 +1,39 @@
-<!--index.wxml-->
-<view class="container">
-  index
+<view class='event-card'>
+  <view class='pin'>
+    <image src='../../assets/icons/pin.svg' class='icon-big'></image>
+  </view>
+  <view class='date-box flex-col-center'>
+    <view class='day'>23</view>
+    <view class='year-month'>2018年10月</view>
+    <view class='week'>周二</view>
+  </view>
+  <view class='event-brief'>
+    <view class='title'>
+      <view class='title-text'>今日事项</view>
+      <view class='progress'>3/4</view>
+    </view>
+    <view class='category'>
+      <view class='cat-name'>工作：</view>
+      <text class='cat-count'>4</text>
+    </view>
+    <view class='category'>
+      <view class='cat-name'>学习计划：</view>
+      <text class='cat-count'>5</text>
+    </view>
+    <view class='category'>
+      <view class='cat-name'>备忘：</view>
+      <text class='cat-count'>3</text>
+    </view>
+  </view>
+</view>
+<view class='buttons'>
+  <view class='btn'>
+    <image src='../../assets/icons/view.svg' class='icon'></image>
+  </view>
+  <view class='btn'>
+    <image src='../../assets/icons/add.svg' class='icon'></image>  
+  </view>
+  <view class='btn'>
+    <image src='../../assets/icons/user.svg' class='icon'></image>    
+  </view>
 </view>

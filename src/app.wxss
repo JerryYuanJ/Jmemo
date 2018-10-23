@@ -1,1 +1,10 @@
-/**app.wxss**/
+page {
+  background-color: #eaeaea;
+}
+
+.flex-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

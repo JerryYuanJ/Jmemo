@@ -1,0 +1,77 @@
+.event-card {
+  /* background-color: #1296db; */
+  background: linear-gradient(#1296db, rgba(0, 119, 255, 0.411));
+  margin: 100rpx 70rpx;
+  padding: 20rpx;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  position: relative;
+}
+.pin{
+  position: absolute;
+  top: -40rpx;
+  left: -25rpx;
+}
+.date-box {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.day {
+  font-size: 100rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.year-month, .week {
+  font-size: 30rpx;
+}
+
+.week {
+  margin: 10rpx 0 20rpx;
+}
+
+.event-brief {
+  margin: 60rpx 0;
+}
+
+.title {
+  font-size: 30rpx;
+  display: flex;
+}
+
+.title-text {
+  margin-right: 20rpx;
+}
+
+.category {
+  padding: 15rpx;
+  display: flex;
+  font-size: 35rpx;
+  border-bottom: 1px solid rgba(61, 54, 54, 0.082);
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 100rpx;
+}
+.btn{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  background-color: #fafafa;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  width: 46rpx;
+  height: 46rpx;
+}
+/* for pin usage */
+.icon-big{
+  width: 100rpx;
+  height: 100rpx;
+}
