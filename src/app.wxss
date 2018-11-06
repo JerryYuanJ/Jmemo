@@ -8,3 +8,171 @@ page {
   align-items: center;
   flex-direction: column;
 }
+
+/* calendar plugin custom style */
+
+.calendar {
+  background: linear-gradient(#1296db, rgba(0, 119, 255, 0.411));
+  color: white;
+  border-radius: 5px;
+}
+
+/* weui style */
+
+.weui-cells {
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: inherit;
+  line-height: 1.41176471;
+  font-size: 34rpx;
+}
+
+.weui-cells:before {
+  top: 0;
+  border-top: 1rpx solid #d9d9d9;
+}
+
+.weui-cells:after, .weui-cells:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2rpx;
+  color: #d9d9d9;
+}
+
+.weui-cells:after {
+  bottom: 0;
+}
+
+/*  */
+
+.weui-cells__title {
+  padding: 20rpx 30rpx 16rpx;
+  color: #999;
+  font-size: 28rpx;
+  background-color: inherit;
+}
+
+.weui-cells_after-title {
+  margin-top: 0;
+}
+
+.weui-cell {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.weui-cell:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  left: 30rpx;
+}
+
+.weui-cell:first-child:before {
+  display: none;
+}
+
+.weui-cell_active {
+  background-color: #ececec;
+}
+
+.weui-cell_primary {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.weui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.weui-cell__ft {
+  text-align: right;
+  color: #999;
+}
+
+.weui-icon-radio {
+  margin-left: 6.4rpx;
+  margin-right: 6.4rpx;
+}
+
+.weui-icon-checkbox_circle, .weui-icon-checkbox_success {
+  margin-left: 9.2rpx;
+  margin-right: 9.2rpx;
+}
+
+.weui-check__label:active {
+  background-color: #ececec;
+}
+
+.weui-check {
+  position: absolute;
+  left: -9999px;
+}
+
+.weui-check__hd_in-checkbox {
+  padding-right: 0.35em;
+  display: flex;
+  align-items: center;
+}
+
+.weui-cell__ft_in-radio {
+  padding-left: 0.35em;
+}
+
+.weui-cell_access {
+  color: inherit;
+}
+
+.weui-cell__ft_in-access {
+  padding-right: 13px;
+  position: relative;
+}
+
+.weui-cell__ft_in-access:after {
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 2px;
+}
+
+.weui-cell_link {
+  color: #586c94;
+  font-size: 14px;
+}
+
+.weui-cell_link:active {
+  background-color: #ececec;
+}
+
+.weui-cell_link:first-child:before {
+  display: block;
+}
+
+.weui-cell_switch {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

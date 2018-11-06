@@ -1,5 +1,4 @@
 .event-card {
-  /* background-color: #1296db; */
   background: linear-gradient(#1296db, rgba(0, 119, 255, 0.411));
   margin: 100rpx 70rpx;
   padding: 20rpx;
@@ -74,4 +73,35 @@
 .icon-big{
   width: 100rpx;
   height: 100rpx;
+}
+.month-view{
+  margin: 50rpx 30rpx 0;
+}
+.calendar-header{
+  padding: 20rpx;
+}
+.week-view{
+  color: white;
+  font-size: 30rpx;
+  height: 77vh;
+  background: linear-gradient(#1296db, rgba(0, 119, 255, 0.411));
+  margin-bottom: 40rpx;
+}
+.week-item{
+  border-bottom: 1px solid #eaeaea66;
+  margin-right: 30rpx;
+  height: 11vh;
+  display: flex;
+  align-items: center;
+}
+.date-info{
+  text-align: center;
+  width: 200rpx;
+  border-right: 1px solid white
+}
+.week-day{
+  font-size: 30rpx;
+}
+.week-date{
+  font-size: 24rpx;
 }

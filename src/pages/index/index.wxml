@@ -1,4 +1,5 @@
-<view class='event-card'>
+<!-- day mode view -->
+<view class='event-card' bindtap='goDetail' wx:if="{{viewMode === 'day'}}">
   <view class='pin'>
     <image src='../../assets/icons/pin.svg' class='icon-big'></image>
   </view>
@@ -10,30 +11,46 @@
   <view class='event-brief'>
     <view class='title'>
       <view class='title-text'>今日事项</view>
-      <view class='progress'>3/4</view>
+      <view class='progress'>4/6</view>
     </view>
-    <view class='category'>
-      <view class='cat-name'>工作：</view>
-      <text class='cat-count'>4</text>
-    </view>
-    <view class='category'>
-      <view class='cat-name'>学习计划：</view>
-      <text class='cat-count'>5</text>
-    </view>
-    <view class='category'>
-      <view class='cat-name'>备忘：</view>
-      <text class='cat-count'>3</text>
+    <view class='category' wx:for="{{brief}}" wx:key="h+{{index}}">
+      <view class='cat-name'>{{ item.name + '：'}}</view>
+      <text class='cat-count'>{{ item.count }}</text>
     </view>
   </view>
 </view>
-<view class='buttons'>
-  <view class='btn'>
+<!-- month mode view -->
+<view wx:if="{{viewMode === 'month'}}" class='month-view'>
+  <calendar weeks-type="cn"
+            lunar 
+            cell-size="40"
+            binddayClick="dayClick"
+            calendar-style="calendar" 
+            header-style="calendar-header"
+            days-color="{{selectedDate}}"/>
+</view>
+<!-- week mode view -->
+<view wx:if="{{viewMode === 'week'}}" class='week-view'>
+  <view class='week-view-title-bar'></view>
+  <view class='week-item' wx:for="{{[1,2,3,4,5,6,7]}}" wx:key="*this">
+    <view class='date-info'>
+      <view class='week-day'>周日</view>
+      <view class='week-date'>10月27日</view>
+    </view>
+    <view class='memo-info'>
+
+    </view>
+  </view>
+</view>
+<!-- bottom tool buttons -->
+<view class='buttons' animation="{{barAnimation}}">
+  <view class='btn' catchtap='go' id='mode'>
     <image src='../../assets/icons/view.svg' class='icon'></image>
   </view>
-  <view class='btn'>
+  <view class='btn' catchtap='go' id='add'>
     <image src='../../assets/icons/add.svg' class='icon'></image>  
   </view>
-  <view class='btn'>
+  <view class='btn' catchtap='go' id='user'>
     <image src='../../assets/icons/user.svg' class='icon'></image>    
   </view>
 </view>

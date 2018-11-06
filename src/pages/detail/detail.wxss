@@ -1,1 +1,18 @@
-/* src/pages/detail/detail.wxss */
+.date{
+  font-size: 34rpx;
+  font-weight: bold;
+  padding: 20rpx;
+  background-color: #fafafa;
+}
+.memo-card{
+  margin: 10rpx;
+  margin-top: 20rpx;
+  border: 1rpx solid #fafafa;
+  border-radius: 10rpx;
+  background-color: white;
+  /* background-color: rgba(67, 218, 238, 0.377) */
+}
+
+.progress-bar{
+  padding-right: 20rpx;
+}

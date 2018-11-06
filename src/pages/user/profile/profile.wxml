@@ -1,0 +1,18 @@
+<view class='profile-card'>
+  <view class='avatar'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='info'>
+    <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' class='auth-btn'>
+      <view>点击登录</view>
+    </button>
+  </view>
+</view>
+<view class='my-settings'>
+  <cell isLink="{{false}}" label="我的标签">
+    <image src="{{icon}}" class='cell-icon'></image>    
+  </cell>
+  <cell label="你的标签" isLink>
+    <image src="{{icon}}" class='cell-icon'></image>
+  </cell>
+</view>

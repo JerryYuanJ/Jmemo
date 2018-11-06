@@ -1,3 +1,15 @@
-this is a detail page.
-but users can upadte the progress here
-but if want to change plan, need to navigate to update page
+<view class='date'>
+  <view>2018年10月25日 周四</view>
+</view>
+<view class='progress-bar'>
+  <progress percent="{{percent}}" show-info="{{true}}"
+            font-size="{{12}}" stroke-width="15"
+            backgroundColor="white" active="{{true}}"
+            active-mode="forwards"/>
+</view>
+<view class='memo-card'>
+  <event-group group="{{checkboxItems}}"></event-group>
+</view>
+<view class='memo-card'>
+  <event-group group="{{checkboxItems2}}"></event-group>
+</view>

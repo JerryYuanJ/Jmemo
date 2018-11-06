@@ -1,1 +1,42 @@
-this is a day plan create page
+<view class="create">
+  <view class='tag'>
+    <cell label="分类" isLink tip="请选择分类">
+    </cell>
+  </view>
+  <view class='tag'>
+    <cell label="日期" isLink tip="请选择日期">
+    </cell>
+  </view>
+  <view class='remind'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">是否提醒</view>
+        <view class="weui-cell__ft">
+          <switch checked />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='remind-time'>
+    <cell label="提醒日期" isLink tip="请选择提醒日期">
+    </cell>
+  </view>
+  <view class='remind-time'>
+    <cell label="提醒时间" isLink tip="请选择提醒时间">
+    </cell>
+  </view>
+  <view class='content'>
+    <view class="weui-cells__title">事项</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" maxlength='-1' 
+                    placeholder="请输入日程详情..." />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='create-btn'>
+    <button type='primary'>创建日程</button>
+  </view>
+</view>

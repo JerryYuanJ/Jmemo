@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "日程详情",
+  "usingComponents": {
+    "event-group": "/components/event-group/event-group"
+  }
+}
