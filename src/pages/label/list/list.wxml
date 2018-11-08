@@ -1,0 +1,7 @@
+<view class='label-list'>
+  <view class='label-item' hover-class='hover-label' 
+  hover-start-time='0' bindtap='goLabel'>
+    <view class='label-text'>学习</view>
+    <view class='label-color' style="background-color: red"></view>
+  </view>
+</view>

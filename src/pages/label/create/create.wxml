@@ -1,0 +1,11 @@
+<view class='label-detail'>
+  <view class='cell'>
+    <view class='tip'>分类名称</view>
+    <input placeholder='请输入分类名称' auto-focus value='学习' placeholder-class='placeholder'></input>
+  </view>
+  <view class='cell color-select'>
+    <view class='tip'>标记色</view>
+    <view class='color-value' style='background-color: red'></view>
+  </view>
+  <view class='color-picker'></view>
+</view>

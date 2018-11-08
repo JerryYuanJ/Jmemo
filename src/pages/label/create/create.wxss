@@ -1,0 +1,44 @@
+.label-detail{
+  background-color: white;
+  font-size: 30rpx;
+}
+.placeholder{
+  color: grey;
+  font-size: 26rpx;
+  text-align: right;
+}
+input{
+  text-align: right;
+}
+.cell{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  height: 90rpx;
+  border-bottom: 1px solid #eaeaea;
+}
+.color-value{
+  height: 30rpx;
+  width: 30rpx;
+  border-radius: 4rpx;
+  margin-right: 26rpx;
+}
+.color-select{
+  position: relative;
+}
+.color-select::after{
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 10px;
+}

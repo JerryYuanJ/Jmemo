@@ -1,0 +1,39 @@
+.label-list{
+  margin-top: 1px;
+  background-color: white;
+}
+.label-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60rpx 0 20rpx;
+  position: relative;
+  height: 90rpx;
+}
+.label-text{
+  font-size: 30rpx;
+}
+.label-color{
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 4rpx;
+  margin-left: 20rpx;
+}
+.label-item::after{
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 10px;
+}
+.hover-label{
+  background-color: #fafafa;
+}

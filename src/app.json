@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/create/create",
     "pages/detail/detail",
-    "pages/user/profile/profile"
+    "pages/user/profile/profile",
+    "pages/label/list/list",
+    "pages/label/create/create"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,7 +13,7 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "plugins":{
+  "plugins": {
     "calendar": {
       "version": "1.1.3",
       "provider": "wx92c68dae5a8bb046"

@@ -45,7 +45,7 @@
 				{
 					"id": 0,
 					"name": "dev",
-					"pathName": "pages/create/create",
+					"pathName": "pages/label/list/list",
 					"query": ""
 				}
 			]

@@ -12,16 +12,16 @@
       <view class="weui-cell weui-cell_switch">
         <view class="weui-cell__bd">是否提醒</view>
         <view class="weui-cell__ft">
-          <switch checked />
+          <switch checked='{{memo.remindMe}}' bindchange='toggleRemind'/>
         </view>
       </view>
     </view>
   </view>
-  <view class='remind-time'>
+  <view class='remind-time' wx:if="{{memo.remindMe}}">
     <cell label="提醒日期" isLink tip="请选择提醒日期">
     </cell>
   </view>
-  <view class='remind-time'>
+  <view class='remind-time' wx:if="{{memo.remindMe}}">
     <cell label="提醒时间" isLink tip="请选择提醒时间">
     </cell>
   </view>
@@ -37,6 +37,6 @@
     </view>
   </view>
   <view class='create-btn'>
-    <button type='primary'>创建日程</button>
+    <button type='primary' bindtap='createMemo'>创建日程</button>
   </view>
 </view>
